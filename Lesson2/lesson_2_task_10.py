@@ -1,12 +1,5 @@
 def bank(X, Y):
-    Процентная_ставка = 0.10
-    Увеличение_вклада = 0.10
-    Сумма = X
+    balance = X
     for _ in range(Y):
-        Сумма = Сумма * (1 + Процентная_ставка) + Сумма * Увеличение_вклада
-        return round (Сумма, 2)
-    X = float(input("Введите размер вклада:"))
-    Y = int(input("Введите срок вклада в годах:"))
-    result = bank(X, Y)
-    print(f"Через {Y} лет на вашем счету будет {result}рублей.")
-    
+        balance = balance * 1.1
+        return balance
