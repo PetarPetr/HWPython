@@ -13,14 +13,14 @@ try:
     for _ in range(5):
         # add_button = chrome.find_element("xpath", '//button[text()="Add element"]').click()
         add_button = chrome.find_element(
-            By.XPATH, '//button[text()="Add Element"]'.click()
+            By.XPATH, '//button[text()="Add Element"]').click()
         add_button = firefox.find_element(
-            By.XPATH, '//button[text()="Add Element"]'.click()    
+            By.XPATH, '//button[text()="Add Element"]').click()    
         sleep(1)
     #Собираем список кнопок Delete
         chrome_delete_buttons = chrome.find_elements(
             "xpath", '//button[text()= "Delete"]')
-        chrome_delete_buttons = firefox.find_elements(
+        firefox_delete_buttons = firefox.find_elements(
             "xpath", '//button[text()= "Delete"]')
 
     #Выводим на экран размер списка
